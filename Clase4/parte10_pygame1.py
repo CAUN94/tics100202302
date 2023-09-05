@@ -48,7 +48,7 @@ while True:
     pygame.draw.rect(screen, rect_color, rect)
 
     # Actualizamos la pantalla
-    pygame.display.flip()
+    pygame.display.update()
 
 # Salimos de Pygame
 pygame.quit()
