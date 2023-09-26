@@ -43,6 +43,7 @@ while ganadas<fin_juego:
         y = random.randint(radio, ventana_alto - radio)
         pygame.draw.circle(ventana, otro, (x, y), radio)
         multiplicador = 1
+    
     if evento.type == pygame.MOUSEBUTTONDOWN:# Comprobar si el usuario hizo clic en un círculo
         pos_mouse = pygame.mouse.get_pos() #obtenemos la posicion donde se hizo el click con el mouse
         distancia = ((pos_mouse[0] - x) ** 2 + (pos_mouse[1] - y) ** 2) ** 0.5 #vemos si se hizo el click en el circulo

@@ -33,7 +33,7 @@ while (puntuacion_jugador < 3) and (puntuacion_PC < 3):
         print("Buena!, Ganaste esta ronda!")
         puntuacion_jugador += 1
     else:
-        print("Perdiste!, el PC Gana esta ronda!")
+        print("Perdiste!, el PC Gana esta 3ronda!")
         puntuacion_PC += 1
     print(f"Puntuacion jugador: {puntuacion_jugador} ; Puntuacion PC {puntuacion_PC}")
 # Determinar el ganador del juego
