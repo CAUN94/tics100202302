@@ -30,9 +30,8 @@ tiempo_inicial = time.time()
 
 # Bucle principal del juego
 while True:
-    for evento in pygame.event.get():
-        if evento.type == pygame.QUIT:
-            pygame.quit()
+    if pygame.event.get().type == pygame.QUIT:
+        pygame.quit()
 
 
     # Calcular el tiempo transcurrido

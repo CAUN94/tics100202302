@@ -13,7 +13,6 @@
 # Ejemplo: print("#"*5) -> #####
 # Ejemplo: print("Hola"*3) -> HolaHolaHola
 
-
 # Ejemplo 3: Crea la misma piramide, pero invertida
 
 # Ejemplo 4: Crear una función que solicite al usuario una clave, si la clave es correcta, retornar True, si la clave es incorrecta, retornar False, el usuario tiene 3 intentos para ingresar la clave, si se equivoca 3 veces, retornar False
