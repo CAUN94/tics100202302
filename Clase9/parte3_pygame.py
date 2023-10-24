@@ -1,6 +1,7 @@
 import pygame
 import csv
 import time
+import random
 
 # Inicializar Pygame
 pygame.init()
@@ -9,8 +10,14 @@ pygame.init()
 ventana = pygame.display.set_mode((400, 400))
 pygame.display.set_caption("Juego de Hacer Clic")
 
-# Coordenadas de los 3 puntos
-puntos = [(100, 100), (200, 200), (300, 300)]
+# Lista para almacenar las coordenadas de los 3 puntos
+puntos = []
+
+# Generar 3 puntos aleatorios
+for _ in range(3):
+    x = random.randint(20, 380)
+    y = random.randint(20, 380)
+    puntos.append((x, y))
 
 # Variables para el tiempo y el clic
 inicio = 0
