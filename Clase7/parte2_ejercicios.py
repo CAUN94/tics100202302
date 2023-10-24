@@ -92,3 +92,7 @@ def borra_notas(lista):
 
 print(borra_notas(crear_lista(40, 1, 10)))
 
+#  Crea una funciono que entregue una lista con n numeros con numeros flooatt aleatorios entre a y b
+
+
+

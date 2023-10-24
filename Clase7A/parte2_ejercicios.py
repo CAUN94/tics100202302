@@ -16,8 +16,10 @@ def crear_lista(n, min, max):
 
 def estado_alumnos(lista):
     for i in range(len(lista)):
-        print(f"Estudiante {i+1} - Nota {lista[i]}")
-
+        if(lista[i] >= 6):
+            print(f"Estudiante {i+1} - Nota {lista[i]} - Aprobado con exelencia")
+        elif(lista[i] >= 4):
+            print(f"Estudiante {i+1} - Nota {lista[i]} - Aprobado")
 notas_alumnos = crear_lista(40,1,7)
 estado_alumnos(notas_alumnos)
 
