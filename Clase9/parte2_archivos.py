@@ -89,6 +89,19 @@ print(f"La cantidad de estudiantes aprobados es: {aprobados}")
 
 crear_csv(estudiantes)
 
+# Finalmente uno puede tomar el archivo de estudiantes.csv y agregarle lineas usando el comando a y cssv
+
+# Si el archivo no existe, se creará uno nuevo
+
+# Si el archivo existe, se agregaran lineas al final del archivo
+
+archivo = open('estudiantes.csv', 'a')
+
+# Escribimos una linea en el archivo
+
+archivo.write('12345678-9,Jose,Jose,20,4,Ingenieria Civil Informatica\n')
+
+
 
 
 
