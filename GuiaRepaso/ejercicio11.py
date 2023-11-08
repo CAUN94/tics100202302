@@ -11,17 +11,27 @@ import numpy as np
 
 # Creamos la funcion de crear Matriz
 def crearMatriz(n):
-    matriz = np.random.randint(1, 10, (n,n))
-    return matriz
+    pass
+    # Creamos matriz usando numpy y randint
+
+    # Retornamos la matriz
+
 
 # Funcion que suma las columnas
 def sumaColumnas(matriz):
-    suma = np.zeros(len(matriz))
-    for i in range(len(matriz)):
-        for j in range(len(matriz)):
-            suma[j] += matriz[i][j]
-    return suma
+    pass
+    # Creamos el vector que almacenara la suma de las columnas (con puros ceros)
+    
+    # Recorremos la matriz (filas)
+    
+        # Recorremos la matriz (columnas)
+        
+            # Sumamos el numero de la posicion actual de la matriz a la posicion y lo guardamos en la posicion j del vector
 
-matriz = crearMatriz(5)
-print("Matriz: \n", matriz)
-print("Suma de columnas: ", sumaColumnas(matriz))
+    # Retornamos el vector        
+    
+
+# Creamos la matriz
+
+
+# Mostramos la matriz y la suma de las columnas

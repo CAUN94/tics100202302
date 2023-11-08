@@ -11,48 +11,47 @@
 
 # Función que recibe una cadena y un número de posiciones y retorna la cadena cifrada
 def cifradoCesar(palabra,posiciones):
-    pass
     # Creamos una variable que almacenará la cadena cifrada 
-    
+    cifrado = ""
 
     # Recorremos la palabra
-    
+    for letra in palabra:
         # Si la letra es un espacio, lo agregamos a la cadena cifrada
-        
-            
+        if letra == " ":
+            cifrado += " "
         # En caso contrario, llamamos a la función nuevaLetra
-        
+        else:
             # Agregamos la nueva letra a la cadena cifrada
-            
+            cifrado += nuevaLetra(letra, posiciones)
 
     # Retornamos la cadena cifrada
-    
+    return cifrado
 
-
+def nuevaLetra(letra, posiciones):
     # Variable que almacenará el alfabeto
-    
+    abc = "abcdefghijklmnñopqrstuvwxyz"
 
     # Variable que almacenará la nueva letra en minúscula
-    
+    letra = letra.lower()
 
     # Recorremos el alfabeto
-    
+    for i in range(len(abc)):
         # Si la letra es igual a la letra del alfabeto en la posición i
-        
+        if letra == abc[i]:
             # Si la posición de la letra + las posiciones a moverse es mayor o igual al largo del alfabeto (26) le restamos 26 para que vuelva a empezar
-            
-                
+            if i + posiciones >= len(abc):
+                return abc[i + posiciones - len(abc)]
             # En caso contrario, retornamos la letra del alfabeto en la posición i + posiciones
-            
-                
+            else:
+                return abc[i + posiciones]
 
 # Solicitamos al usuario que ingrese una palabra y un número de posiciones
-
+palabra = input("Ingrese una palabra: ")
 # Solicitamos al usuario que ingrese un número de posiciones
-
+posiciones = int(input("Ingrese el número de posiciones: "))
 
 
 # Mostramos la cadena cifrada usando la función cifradoCesar
-
+print("Cadena cifrada: ", cifradoCesar(palabra, posiciones))
 
 

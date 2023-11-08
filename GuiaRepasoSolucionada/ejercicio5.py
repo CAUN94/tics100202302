@@ -7,18 +7,20 @@
 # Se repite esto hasta que el número llegue a 1
 
 def collatz(n):
-    pass
     # Variable que almacenará la cantidad de iteraciones
-    
+    iteraciones = 0
     # Mientras el número sea distinto de 1
-    
+    while n != 1:
         # Si el número es par, se divide entre 2
-        
-            
+        if n % 2 == 0:
+            n //= 2
         # Si el número es impar, se multiplica por 3 y se le suma 1
-            
+        else:
+            n = n * 3 + 1
         # Aumentamos la variable iteraciones en 1
-        
+        iteraciones += 1
     # Mostramos la cantidad de iteraciones
+    print("Cantidad de iteraciones: ", iteraciones)
 
-
+n = int(input("Ingrese un número: "))
+collatz(n)

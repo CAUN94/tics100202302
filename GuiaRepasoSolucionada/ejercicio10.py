@@ -4,25 +4,18 @@ import numpy as np
 
 # Creamos la funcion de crear vectores
 def crearVector(n):
-    pass
-    # Creamos vector usando numpy y randint
-
-    # Retornamos el vector
-    
+    vector = np.random.randint(0, 10, n)
+    return vector
 
 # Funcion que calcula el escalar
 def productoEscalar(vec1,vec2):
-    pass
-    # Variable que almacenara el escalar
-    
-    # Recorremos los vectores
-        # Sumamos el producto de los numeros que ocupan la misma pos
-        # icion en los vectores
+    escalar = 0
+    for i in range(len(vec1)):
+        escalar += vec1[i] * vec2[i]
+    return escalar
 
-    # Retornamos el escalar
-
-# Creamos los vectores
-
-
-# Mostramos los vectores y el escalar
-
+vec1 = crearVector(20)
+vec2 = crearVector(20)
+print("Vector 1: ", vec1)
+print("Vector 2: ", vec2)
+print("Escalar: ", productoEscalar(vec1,vec2))

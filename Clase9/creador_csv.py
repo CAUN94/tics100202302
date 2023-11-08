@@ -18,7 +18,7 @@ for _ in range(1000):
     data.append(estudiante)
 
 # Guardar los datos en un archivo CSV
-with open('estudiantes.csv', 'w', newline='') as archivo_csv:
+with open('lista_estudiantes.csv', 'w', newline='') as archivo_csv:
     campos = ['Rut', 'Nombre', 'Apellido', 'Edad', 'Promedio_final', 'Carrera']
     escritor_csv = csv.DictWriter(archivo_csv, fieldnames=campos)
 

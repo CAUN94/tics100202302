@@ -5,28 +5,30 @@ import time
 
 # Función que recibe dos números y retorna la suma de ambos
 def suma(a, b):
-    pass
+    return a + b
 
 # Función que recibe tres números y retorna True si la suma de los dos primeros es igual al tercero, False en caso contrario
 def verificarSuma(a, b, c):
-    pass
+    return suma(a, b) == c
 
-
+while True:
     # Generamos dos números aleatorios entre 1 y 100
-    
-    
+    a = random.randint(1, 100)
+    b = random.randint(1, 100)
     
     # Mostramos la suma de los números
-    
+    print("Suma: ", a, "+", b)
     
     # Variable que almacenará la respuesta del usuario
-    
+    respuesta = int(input("Ingrese la respuesta: "))
     
     # Variable que almacenará el tiempo actual
-    
+    tiempo = time.time()
     
     # Si la respuesta es correcta y el tiempo es menor a 5 segundos, el usuario sigue jugando
-    
+    if verificarSuma(a, b, respuesta) and time.time() - tiempo < 5:
+        print("Correcto!")
     # Si la respuesta es incorrecta o el tiempo es mayor a 5 segundos, el usuario pierde
-    
-        
+    else:
+        print("Perdiste!")
+        break
